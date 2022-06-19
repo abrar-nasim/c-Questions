@@ -2,12 +2,6 @@
 #include <string>
 using namespace std;
 
-int main() {
-    cin>>num;
-    printKeypad(num);
-    return 0;
-}
-
 void printKeypadHelp(int n, string output) {
     string keypad[] = {"abc","def", "ghi", "jkl", "mno","pqrs", "tuv", "wxyz"};
     
@@ -45,3 +39,10 @@ void printKeypad(int num){
     printKeypadHelp(num,"");
 }
 
+
+int main() {
+    int num;
+    cin>>num;
+    printKeypad(num);
+    return 0;
+}
