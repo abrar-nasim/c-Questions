@@ -32,12 +32,12 @@ class Graph{
 };
 
 int main(){
-    Graph g(4);
-    g.add_edges(0,1);
-    g.add_edges(1,2);
-    g.add_edges(0,2);
-    g.add_edges(2,3);
-    g.print();
+    Graph *g = new Graph(4);
+    g->add_edges(0,1);
+    g->add_edges(1,2);
+    g->add_edges(0,2);
+    g->add_edges(2,3);
+    g->print();
     
 }
 
