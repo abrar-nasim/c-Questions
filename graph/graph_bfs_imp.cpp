@@ -4,6 +4,8 @@
 #include<queue>
 using namespace std;
 
+
+//directed graph
 class Graph
 {
 private:
@@ -17,11 +19,12 @@ public:
 
     void addEdge(int v, int w) {
         adj[v].push_back(w);
+        
     }
 
     void display() {
         for(int i=0;i<v;i++) {
-            cout<<v<<"->";
+            cout<<i<<"->";
             for(int j: adj[i]){
                 cout<<j<<",";
             }
@@ -68,5 +71,9 @@ int main() {
     cout << "Following is Breadth First Traversal "
          << "(starting from vertex 2) \n";
     g.BFS(2);
+    cout<<endl;
+
+    cout<<endl<<"Grpah is"<<endl;
+    g.display();
     return 0;
 }
